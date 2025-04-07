@@ -55,7 +55,7 @@ aws_secret_access_key = <SECRET-KEY>
 
 **Note:** If you have many profiles you can make entries accordingly in the above file and use it in the Terraform
 
-## To push the code to GitHub
+## To push the code to GitHub.
 ```
 git add *
 git commit -m "Create EC2 Instance"
