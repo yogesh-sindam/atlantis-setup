@@ -94,10 +94,10 @@ atlantis server \
   --repo-allowlist="localhost/root/*" \
   --config="/etc/atlantis/server.yaml"
 
-###############################
-another simple rego file 
-##
 
+# another simple rego file 
+##
+```
 package terraform
 
 # Check if the "policy" configuration block exists in the Terraform plan.
@@ -107,4 +107,5 @@ deny[msg] {
 
   msg := "Policy configuration is missing. Please ensure the 'policy' block is defined."
 }
-#########################
+```
+
