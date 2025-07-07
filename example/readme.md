@@ -43,7 +43,7 @@ $sudo nano /etc/atlantis/server.yaml
 
 
 1. Extend server.yaml with a policy check
- 
+``` 
 repos:
   - id: "localhost/root/your-repo"
   - id: "localhost/root/*" # Allow all repos under "root"
@@ -58,6 +58,7 @@ workflows:
     apply:
       steps:
         - run: terraform apply tfplan
+```
 		
 Explanation: run: conftest test *.tf --policy=policies/terraform.rego: This integrates OPA (Open Policy Agent) using conftest to enforce Terraform policy checks during the plan stage.
 terraform apply will only run if the policy passes.
