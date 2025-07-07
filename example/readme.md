@@ -88,6 +88,7 @@ When you run atlantis plan, if your Terraform file is missing tags, you’ll get
 
  2. Set up the Atlantis server command
 Now, start Atlantis with the auth and URL configs as CLI arguments:
+```
 atlantis server \
   --atlantis-url="http://localhost:4141" \
   --gitlab-user="your-gitlab-user" \
@@ -95,7 +96,7 @@ atlantis server \
   --gitlab-webhook-secret="your-webhook-secret" \
   --repo-allowlist="localhost/root/*" \
   --config="/etc/atlantis/server.yaml"
-
+```
 
 # another simple rego file 
 ##
