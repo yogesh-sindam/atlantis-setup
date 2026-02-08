@@ -78,7 +78,8 @@ three ways you can apply atlantis policy check
 1. on merge request it can plan, policy check, and apply resources
 2. we can also create bash file which having a init and plan and policy check on the provided path.
 3. what if a user can directly create resources then he create pull merge request.
-then you want a github action workflow which policy check on each PR raised, and run policy on tf file.
+then you want a github action workflow which policy check on each PR raised, and run policy on tf file
+
 
 
 
